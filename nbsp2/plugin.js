@@ -16,7 +16,6 @@ CKEDITOR.plugins.add( 'nbsp2', {
         // Insert &nbsp; if Ctrl+Space is pressed:
         editor.addCommand( 'insertNbsp2', {
             exec: function( editor ) {
-                console.log('fire');
                 editor.execCommand( 'nbsp2' );
             }
         });
