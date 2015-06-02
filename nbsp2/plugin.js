@@ -19,7 +19,7 @@ CKEDITOR.plugins.add( 'nbsp2', {
                 editor.execCommand( 'nbsp2' );
             }
         });
-        editor.setKeystroke( CKEDITOR.CTRL + 32 /* space */, 'insertNbsp' );
+        editor.setKeystroke( CKEDITOR.CTRL + 32 /* space */, 'insertNbsp2' );
         editor.widgets.add( 'nbsp2', {
             button: 'Insert hard space',
             template: '<span class="cke-nbsp2">&nbsp;</span>',
