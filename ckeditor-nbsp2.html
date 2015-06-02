@@ -12,10 +12,11 @@
         
         <textarea name="editor1"></textarea>
         <script>
+            CKEDITOR.plugins.addExternal('lineutils', '/lineutils/');
             CKEDITOR.plugins.addExternal('widget', '/widget/');
             CKEDITOR.plugins.addExternal('nbsp2', '/nbsp2/');
             CKEDITOR.replace( 'editor1', {
-                extraPlugins: 'widget,nbsp2',
+                extraPlugins: 'lineutils,widget,nbsp2',
             } );
         </script>
     </body>
