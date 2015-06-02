@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CKEditor plugin nbsp2 demo</title>
+        <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script>
+    </head>
+    <body>
+        <p>
+            Demo page for CKEditor and nbsp2 plugin. Inspiration <a href="https://cdn.ckeditor.com/">Demo Inspiration</a>
+        </p>
+        
+        <textarea name="editor1"></textarea>
+        <script>
+            CKEDITOR.plugins.addExternal('nbsp2', '/nbsp2/', 'plugin.js' );
+            CKEDITOR.replace( 'editor1', {
+                extraPlugins: 'widget,nbsp2',
+            } );
+        </script>
+    </body>
+</html>
